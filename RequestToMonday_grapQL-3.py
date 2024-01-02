@@ -3,13 +3,14 @@ import json
 import pandas as pd
 
 
-apiKey = ""
+apiKey = "" #add your Monday.com key here
 
 apiUrl = "https://api.monday.com/v2"
 headers = {"Authorization": apiKey}
 
 #GraphQL query to retrieve data from Monday.com
-query2 = 'query {  boards(limit:1,ids:[3894196945]) {  name  groups(ids:["topics"]){ title items{  name   column_values{  title  text}}}}}'
+#this API version is depricated, please refer to the new Monday.com API documentation for new 
+query2 = 'query {  boards(limit:1,ids:[3894196945]) {  name  groups(ids:["topics"]){ title items{  name   column_values{  title  text}}}}}' GraphQL
 
 data = {'query': query2}
 
