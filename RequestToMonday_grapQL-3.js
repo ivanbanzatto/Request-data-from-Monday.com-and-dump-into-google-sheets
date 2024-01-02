@@ -1,11 +1,13 @@
 //main function
+// the API version written in this code is depricated, pls consult the new version on the Monday.com wibsite
 function requestMonday() {
 
   let base_url= "https://api.monday.com/v2";
   let apiKey = "";
 
+  // query just to get board name, groups ids and names
   let query = `query {
-    boards(limit:1,ids:[120818187]) { # query just to get board name, groups ids and names
+    boards(limit:1,ids:[120818187]) { 
         name
             groups{
               id
