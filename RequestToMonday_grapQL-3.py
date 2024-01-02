@@ -30,7 +30,7 @@ for i in range(number_of_columns-1):  # grab column titles from Monday.com respo
 
 # the response from Monday.com misses the first column, so we have to add it manually
 headers_excel = ['Name']
-# merge the column titles with the first header "Name"
+# merge the column titles with the first header "Name" for item name
 headers_excel = headers_excel + titles
 
 print("Headers_excel: ", headers_excel)  # print to see the result
