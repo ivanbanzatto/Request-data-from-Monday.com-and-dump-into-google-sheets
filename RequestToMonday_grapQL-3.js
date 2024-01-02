@@ -1,4 +1,4 @@
-#main function
+//main function
 function requestMondayNewAlgorithm() {
 
   let base_url= "https://api.monday.com/v2";
@@ -28,7 +28,7 @@ function requestMondayNewAlgorithm() {
   let response = UrlFetchApp.fetch(base_url,options).getContentText();
   let result = JSON.parse(response);
 
-  #console.log("Group to be written: ",result.data.boards[0].groups[0].title) 
+  //console.log("Group to be written: ",result.data.boards[0].groups[0].title) 
 
   let groups = result.data.boards[0].groups
   console.log(groups.title);
@@ -51,7 +51,7 @@ function requestMondayNewAlgorithm() {
      
 }
 
-#we query the board Monday.com API, quer get the name of the columns, writing them in the sheet firstly.
+//we query the board Monday.com API, quer get the name of the columns, writing them in the sheet firstly.
 function writeHeaders(){
 
   let base_url= "https://api.monday.com/v2";
@@ -98,7 +98,7 @@ function writeHeaders(){
 
 }
 
-#to avoid too much data in one query, we query Monday.com API by group, and write in the googlesheet by group as well
+//to avoid too much data in one query, we query Monday.com API by group, and write in the googlesheet by group as well
 function writeSpreadsheet(group){
 
   let base_url= "https://api.monday.com/v2";
