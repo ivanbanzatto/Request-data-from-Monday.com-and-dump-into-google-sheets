@@ -1,5 +1,5 @@
 //main function
-function requestMondayNewAlgorithm() {
+function requestMonday() {
 
   let base_url= "https://api.monday.com/v2";
   let apiKey = "";
