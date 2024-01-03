@@ -7,7 +7,7 @@ function requestMonday() {
 
   // query just to get board name, groups ids and names
   let query = `query {
-    boards(limit:1,ids:[120818187]) { 
+    boards(limit:1,ids:[...]) { 
         name
             groups{
               id
