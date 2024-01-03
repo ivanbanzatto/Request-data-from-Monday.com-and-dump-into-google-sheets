@@ -1,4 +1,5 @@
 Author: Ivan B.
+
 Contact: ivanbanzatto@gmail.com
 
 This JS scripts are for beginner and can run inside google scripts.
